@@ -4,9 +4,7 @@ import '../pages/style/register.css';
 function register() {
 	return (
 		<div>
-			<h1>soy el registro</h1>
-
-
+ 
 			<div className="d-flex p-2  loginContainer ">
 
 				<form
@@ -19,7 +17,7 @@ function register() {
 					<div class="col-12 sm-6 d-flex align-items-end">
 						<p class="text-start ">Crea tu cuenta</p>
 					</div>
-
+					
 					{/* input de tipo texto */}
 					<div class="col-md-12">
 						<input
