@@ -1,40 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import './style components/nav.css'
 
 function nav() {
 	return (
-		<nav class="navbar navbar-expand-lg bg-light">
-			<div class="container-fluid">
-				<Link class="navbar-brand" to="/">
-					Home
-				</Link>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<Link class="nav-link active" aria-current="page" to="/register">
-								Registro
-							</Link>
-						</li>
-						<li class="nav-item">
-							<Link class="nav-link" to="/login">
-								Login
-							</Link>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+<div>
+
+<html lang="en"/>
+<head/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Menú Responsive</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+<head/>
+<body>
+    <nav>
+        <input type="checkbox" id="check"/>
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="logo.png" alt="" class="logo"/>
+        </a>
+        <ul>
+            <li><a class="active" href="#">MENU</a></li>
+            <li><a href="#">Perfil de Usuario</a></li>
+            <li><a href="#">Notificaciones</a></li>
+            <li><a href="#">Cerar sesion</a></li>
+		</ul>
+    </nav>
+		
+</body>
+
+
+</div>
+
 	);
 }
 
