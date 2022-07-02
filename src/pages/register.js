@@ -1,30 +1,33 @@
 import React from 'react';
+
 import '../pages/style/register.css';
 
 function register() {
 	return (
 		<div>
- 
+
+
+
 			<div className="d-flex p-2  loginContainer ">
+				<a class="btn1" role="button" href="/"> <i class="bi bi-arrow-left"></i> </a>
 
 				<form
 					class="row g-3 needs-validation d-flex align-items-center formContainer"
 					novalidate
 				>
-					<i class="bi bi-arrow-left"></i>
 
 					{/* Mensaje para iniciar sesion */}
 					<div class="col-12 sm-6 d-flex align-items-end">
 						<p class="text-start ">Crea tu cuenta</p>
 					</div>
-					
+
 					{/* input de tipo texto */}
 					<div class="col-md-12">
 						<input
 							type="text"
 							class="form-control"
 							id="validationCustom01"
-							required
+							// required
 							placeholder="Nombre"
 						/>
 					</div>
@@ -35,7 +38,7 @@ function register() {
 							type="text"
 							class="form-control"
 							id="validationCustom01"
-							required
+							// required
 							placeholder="Apellidos"
 						/>
 					</div>
@@ -46,7 +49,7 @@ function register() {
 							type="email"
 							class="form-control"
 							id="validationCustom01"
-							required
+							// required
 							placeholder="Email"
 						/>
 					</div>
@@ -57,7 +60,7 @@ function register() {
 							type="password"
 							class="form-control"
 							id="validationCustom02"
-							required
+							// required
 							placeholder="Contraseña"
 						/>
 					</div>
@@ -68,7 +71,7 @@ function register() {
 							type="password"
 							class="form-control"
 							id="validationCustom02"
-							required
+							// required
 							placeholder="Confirmar Contraseña"
 						/>
 					</div>

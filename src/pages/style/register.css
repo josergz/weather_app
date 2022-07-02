@@ -41,3 +41,7 @@ p.fw-normal {
 .btn {
 	box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.425);
 }
+
+.btn1{
+	box-shadow: 4px 5px 5px 0px rgba(0);
+}
