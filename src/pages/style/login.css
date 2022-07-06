@@ -1,17 +1,24 @@
 .loginContainer {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	text-align: center;
 }
 
-.btn {
+.btn2 {
+	border: none;
+	padding: 5px;
+	border: disabled;
 	margin-top: 20px;
 	width: 100%;
 	background: #3b0086;
-
 	color: white;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
-.btn:hover {
+.btn2:hover {
 	color: white;
 	background: #230052;
 }
@@ -37,7 +44,7 @@ p.fw-normal {
 	width: 100%;
 }
 
-.form-control,
-.btn {
+.sombra,
+.btn2 {
 	box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.425);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './style/login.css';
+import { Link } from 'react-router-dom';
 
 function login() {
 	return (
@@ -17,7 +18,7 @@ function login() {
 				<div class="col-md-4">
 					<input
 						type="email"
-						class="form-control"
+						class="form-control sombra"
 						id="validationCustom01"
 						required
 						placeholder="Email"
@@ -29,7 +30,7 @@ function login() {
 				<div class="col-md-4">
 					<input
 						type="password"
-						class="form-control"
+						class="form-control sombra"
 						id="validationCustom02"
 						required
 						placeholder="Contraseña"
@@ -39,7 +40,7 @@ function login() {
 
 				{/* Boton submit para el inicio de sesion */}
 				<div class="col-12">
-					<button class="btn" type="submit">
+					<button class="btn2" type="submit">
 						Log In
 					</button>
 				</div>
@@ -48,9 +49,9 @@ function login() {
 				<div class="col-12">
 					<p className="fw-normal">
 						No tienes una cuenta?{' '}
-						<a class="fw-semibold registerLink" href="/">
+						<Link class="fw-semibold registerLink" to="/register">
 							Registrate
-						</a>
+						</Link>
 					</p>
 				</div>
 			</form>

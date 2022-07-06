@@ -1,13 +1,14 @@
 import React from 'react';
 import Nav from '../components/nav';
-import Footer from '../components/footer';
+import NavEncabezado from '../components/navEncabezado';
 
 function layaout({ children }) {
 	return (
 		<div>
+			<NavEncabezado />
 			<Nav />
+
 			{children}
-			<Footer />
 		</div>
 	);
 }

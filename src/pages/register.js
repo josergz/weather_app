@@ -1,20 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import '../pages/style/register.css';
+// import '../pages/style/register.css';
 
 function register() {
 	return (
 		<div>
-
-
-
 			<div className="d-flex p-2  loginContainer ">
-				<a class="btn1" role="button" href="/"> <i class="bi bi-arrow-left"></i> </a>
-
 				<form
 					class="row g-3 needs-validation d-flex align-items-center formContainer"
 					novalidate
 				>
+					<Link class="btn1 text-start" role="button" to="/login">
+						<i class="bi bi-arrow-left"></i>
+					</Link>
 
 					{/* Mensaje para iniciar sesion */}
 					<div class="col-12 sm-6 d-flex align-items-end">
@@ -25,7 +24,7 @@ function register() {
 					<div class="col-md-12">
 						<input
 							type="text"
-							class="form-control"
+							class="form-control sombra"
 							id="validationCustom01"
 							// required
 							placeholder="Nombre"
@@ -36,7 +35,7 @@ function register() {
 					<div class="col-md-12">
 						<input
 							type="text"
-							class="form-control"
+							class="form-control sombra"
 							id="validationCustom01"
 							// required
 							placeholder="Apellidos"
@@ -47,7 +46,7 @@ function register() {
 					<div class="col-md-12">
 						<input
 							type="email"
-							class="form-control"
+							class="form-control sombra"
 							id="validationCustom01"
 							// required
 							placeholder="Email"
@@ -58,7 +57,7 @@ function register() {
 					<div class="col-md-12">
 						<input
 							type="password"
-							class="form-control"
+							class="form-control sombra"
 							id="validationCustom02"
 							// required
 							placeholder="Contraseña"
@@ -69,7 +68,7 @@ function register() {
 					<div class="col-md-12">
 						<input
 							type="password"
-							class="form-control"
+							class="form-control sombra"
 							id="validationCustom02"
 							// required
 							placeholder="Confirmar Contraseña"
@@ -78,14 +77,12 @@ function register() {
 
 					{/* Boton submit para el registro de cuentan */}
 					<div class="col-12">
-						<button class="btn" type="submit">
+						<button class="btn2" type="submit">
 							Sing Up
 						</button>
 					</div>
-
 				</form>
 			</div>
-
 		</div>
 	);
 }
