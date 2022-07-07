@@ -4,7 +4,7 @@ import './style/home.css';
 import { signOut } from 'firebase/auth';
 import { auth } from '../fire';
 
-function Home({ user, setAuthState, setUser }) {
+function home({ user, setAuthState, setUser }) {
 	const signOutHandler = () => {
 		signOut(auth)
 			.then(() => {
@@ -31,4 +31,4 @@ function Home({ user, setAuthState, setUser }) {
 	);
 }
 
-export default Home;
+export default home;

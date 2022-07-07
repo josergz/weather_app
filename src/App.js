@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Login from './auth/Login';
 import Register from './auth/Register';
-import Home from './pages/Home';
+import Home from './pages/home';
 
 import { auth } from './fire';
 import { onAuthStateChanged } from 'firebase/auth';

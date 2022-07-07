@@ -20,45 +20,43 @@ function Login({ setAuthState, setUser }) {
 	};
 
 	return (
-		<div className="">
+		<div className="contenedor">
 			<div className="">
 				<div className=" ">
-					<h1 className="">Welcome Back</h1>
-					<p className="">Welcome back! Please enter you details.</p>
-					<div className="">
+
+					
+					<div className="formContainer">
+					<p className="text-start">inicia sesión con tu cuenta</p>
 						{/* Input para ingresar el correo  */}
-						<div className="">
-							<label className="">Email</label>
+						<div className="mb-3">
+							<label className="sombra"></label>
 							<input
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
-								className=""
-								placeholder="Enter your email"
+								className="form-control"
+								placeholder="email"
 							/>
 						</div>
 						{/* Input para ingresar la contraseña  */}
 						<div className="">
-							<label className="">Password</label>
+							
 							<input
 								value={password}
 								onChange={(e) => setPassword(e.target.value)}
-								className=""
-								placeholder="Enter your email"
+								className="form-control"
+								placeholder= "Contraseña"
 								type={'password'}
 							/>
 						</div>
 						{/* Boton para iniciar sesion */}
-						<div className="mt-8 flex flex-col gap-y-4">
-							<button onClick={handleLogin} className="">
-								Log In
-							</button>
+						<div className="">
+							<button onClick={handleLogin} className="mt-8 flex flex-col gap-y-4">Log In</button>
 						</div>
 						{/* Boton para registrarse */}
 						<div className="">
-							<p className="">No tienes una cuenta?</p>
-							<button onClick={() => setAuthState('register')}>
-								Registrate
-							</button>
+							<p className="cuenta">No tienes una cuenta?</p>
+							
+							<button className="registerLink" onClick={() => setAuthState('register')}>Registrate</button>
 						</div>
 					</div>
 				</div>
