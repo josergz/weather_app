@@ -3,6 +3,8 @@ import * as React from 'react';
 import { auth } from '../fire';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
+import '../auth/style/register.css';
+
 export default function Register({ setAuthState, setUser }) {
 	const [email, setEmail] = React.useState('');
 	const [password, setPassword] = React.useState('');
@@ -21,44 +23,54 @@ export default function Register({ setAuthState, setUser }) {
 	};
 
 	return (
-		<div className="">
-			<h1 className="">Register</h1>
-			<p className="">Welcome back! Please enter you details.</p>
-			<div className="">
-				{/* input para ingresar email  */}
-				<div className="">
-					<label className="">Email</label>
-					<input
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
-						className=""
-						placeholder="Enter your email"
-					/>
-				</div>
-				{/* input para introducir tu contraseña  */}
-				<div className="">
-					<label className="">Password</label>
-					<input
-						value={password}
-						onChange={(e) => setPassword(e.target.value)}
-						className=""
-						placeholder="Enter your email"
-						type={'password'}
-					/>
-				</div>
 
-				{/* input para registrarse  */}
-				<div className="">
-					<button onClick={onSignUpHandle} className="">
-						Register
-					</button>
-				</div>
+
+		<form className="RegisterContainer">
+
+
+			<div className="form-control"	>
+				<h1 className="">Registro</h1>
+				{/*
+				<p className="">Welcome back! Please enter you details.</p>
+	*/}
 
 				<div className="">
-					<p className="">ya tienes una cuenta?</p>
-					<button onClick={() => setAuthState('login')}>inicio</button>
+					{/* input para ingresar email  */}
+					<div className="">
+						{/*	<label className="">Email</label> */}
+						<input
+							value={email}
+							onChange={(e) => setEmail(e.target.value)}
+							className="caja"
+							placeholder="Enter your email"
+						/>
+					</div>
+					{/* input para introducir tu contraseña  */}
+					<div className="">
+
+						{/* <label className="">Password</label> */}
+						<input
+							value={password}
+							onChange={(e) => setPassword(e.target.value)}
+							className="caja"
+							placeholder="Enter your password"
+							type={'password'}
+						/>
+					</div>
+
+					{/* input para registrarse  */}
+					<div className="sep">
+						<button onClick={onSignUpHandle} className="btn">
+							Register
+						</button>
+					</div>
+
+					<div className="bti">
+						<p className="">ya tienes una cuenta?</p>
+						<button className="btn" onClick={() => setAuthState('login')}>inicio</button>
+					</div>
 				</div>
 			</div>
-		</div>
+		</form>
 	);
 }

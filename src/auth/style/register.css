@@ -1,39 +1,21 @@
-/* .RegisterContainer {
+
+.RegisterContainer {
 	width: 80%;
 	margin: auto;
 	text-align: center;
 }
 
 .btn {
-	margin-top: 20px;
+	margin-top: 10px;
 	width: 100%;
 	background: #3b0086;
-
 	color: white;
 }
-.btn:hover {
-	color: white;
-	background: #230052;
-}
 
-.registerLink {
-	text-decoration: none;
-	color: #3b0086;
-	font-size: medium;
-}
-
-p.text-start,
-.fw-normal {
-	margin: 0;
-}
-p.fw-normal {
-	text-align: center;
-	margin-top: 25px;
-}
 
 .formContainer {
 	margin: auto;
-	padding: 25px 0px 25px 0px;
+	padding: 20px 0px 25px 0px;
 	width: 100%;
 }
 
@@ -42,6 +24,20 @@ p.fw-normal {
 	box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.425);
 }
 
-.btn1 {
-	box-shadow: 4px 5px 5px 0px rgba(0);
-} */
+
+.caja {
+	
+	margin-bottom: .5em;
+	padding: 10px;
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.sep{
+	margin-bottom: .15em;
+}
+
+.bti {
+	margin-top: auto;
+}
