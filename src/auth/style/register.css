@@ -1,4 +1,14 @@
+.arrowButton {
+	border: none;
+	background: none;
+}
 
+#root > form > div > div.text-start > button > i {
+	width: 100%;
+	font-size: 25px;
+	font-weight: 800;
+}
+/* 
 .RegisterContainer {
 	width: 80%;
 	margin: auto;
@@ -40,4 +50,4 @@
 
 .bti {
 	margin-top: auto;
-}
+} */

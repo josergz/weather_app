@@ -23,52 +23,52 @@ export default function Register({ setAuthState, setUser }) {
 	};
 
 	return (
+		<form className="contenedor">
+			<div className="formContainer">
+				{/* Flecha para regresar a la pantalla de login  */}
+				<div className="text-start">
+					<button className="arrowButton" onClick={() => setAuthState('login')}>
+						<i class="bi bi-arrow-left"></i>
+					</button>
+				</div>
 
+				{/* Titulo de la pagina de registro  */}
+				<h3 className="text-start">Crear tu cuenta</h3>
 
-		<form className="RegisterContainer">
-
-
-			<div className="form-control"	>
-				<h1 className="">Registro</h1>
-				{/*
-				<p className="">Welcome back! Please enter you details.</p>
-	*/}
-
+				{/* Input para ingresar el correo  */}
+				<div className="mb-3">
+					<label className="sombra"></label>
+					<input
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+						className="form-control"
+						placeholder="Email"
+						type={'email'}
+						id="validationCustom01"
+						required
+					/>
+				</div>
+				{/* Input para ingresar la contraseña  */}
 				<div className="">
-					{/* input para ingresar email  */}
-					<div className="">
-						{/*	<label className="">Email</label> */}
-						<input
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
-							className="caja"
-							placeholder="Enter your email"
-						/>
-					</div>
-					{/* input para introducir tu contraseña  */}
-					<div className="">
+					<input
+						value={password}
+						onChange={(e) => setPassword(e.target.value)}
+						className="form-control"
+						placeholder="Contraseña"
+						type={'password'}
+						id="validationCustom02"
+						required
+					/>
+				</div>
 
-						{/* <label className="">Password</label> */}
-						<input
-							value={password}
-							onChange={(e) => setPassword(e.target.value)}
-							className="caja"
-							placeholder="Enter your password"
-							type={'password'}
-						/>
-					</div>
-
-					{/* input para registrarse  */}
-					<div className="sep">
-						<button onClick={onSignUpHandle} className="btn">
-							Register
-						</button>
-					</div>
-
-					<div className="bti">
-						<p className="">ya tienes una cuenta?</p>
-						<button className="btn" onClick={() => setAuthState('login')}>inicio</button>
-					</div>
+				{/* input para registrarse  */}
+				<div className="">
+					<button
+						onClick={onSignUpHandle}
+						className="mt-8 flex flex-col gap-y-4"
+					>
+						Sign up
+					</button>
 				</div>
 			</div>
 		</form>

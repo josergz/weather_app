@@ -17,9 +17,10 @@ const FormWeather = () => {
 	};
 
 	return (
-		<div className="formContainer">
+		<div className="">
 			<div className="buscadorContainer">
 				<div className="input-group mb-3 mx-auto">
+					{/* Barra de busqueda  */}
 					<input
 						type="text"
 						className="form-control"
@@ -28,6 +29,7 @@ const FormWeather = () => {
 						onChange={(e) => setQuery(e.target.value)}
 						onKeyPress={search}
 					/>
+					{/* Boton de busqueda  */}
 					<button
 						className="btn btn-dark input-group-text"
 						type="submit"

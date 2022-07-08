@@ -15,17 +15,16 @@ function home({ user, setAuthState, setUser }) {
 	};
 
 	return (
-		<div className="home">
+		<div className="contenedor">
 			<div className="homeContainer">
-				<h3 className="titulo">Bienvenido</h3>
+				<h3 className="">Bienvenido {user}</h3>
 				<FormWeather />
-			</div>
-			<div className="">
-				This is the home screen
-				{user}
-				<button onClick={signOutHandler} className="">
-					Sign Out
-				</button>
+				{/* Boton para cerrar sesion  */}
+				<div className="">
+					<button onClick={signOutHandler} className="">
+						Sign Out
+					</button>
+				</div>
 			</div>
 		</div>
 	);
