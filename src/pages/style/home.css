@@ -1,3 +1,6 @@
+/* * {
+	background: #f0f3f5;
+} */
 .home {
 	width: 100%;
 	margin: 25px 0px 25px 0px;
@@ -18,4 +21,18 @@
 .titulo {
 	width: 90%;
 	margin: auto;
+}
+.containerxd {
+	width: 60%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.cardHome {
+	background: #f0f3f5;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import { fetchWeather } from './fetchWeather';
-import '../style_components/form.css';
+// import '../style_components/form.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const FormWeather = () => {
 	const [query, setQuery] = useState('');
