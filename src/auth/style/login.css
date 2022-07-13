@@ -52,12 +52,6 @@ p.fw-normal {
 	margin-top: 25px;
 }
 
-.formContainer {
-	margin: auto;
-
-	width: 50%;
-}
-
 .sombra,
 .btn2 {
 	box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.425);
@@ -79,4 +73,27 @@ p.fw-normal {
 .registroContainer p {
 	margin: 0;
 	padding: 0;
+}
+
+@media (max-width: 480px) {
+	.formContainer {
+		margin: auto;
+
+		width: 90%;
+	}
+}
+@media (min-width: 768px) {
+	.formContainer {
+		margin: auto;
+
+		width: 80%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.formContainer {
+		margin: auto;
+
+		width: 50%;
+	}
 }

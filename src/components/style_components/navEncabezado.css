@@ -1,9 +1,6 @@
-.navbarxd {
-	text-align: center;
-	padding: 25px;
-}
-
-.titulonav {
-	margin: 0;
-	padding: 0;
+#navbarTogglerDemo02,
+.d-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 }
