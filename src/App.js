@@ -3,13 +3,19 @@ import Login from './auth/Login';
 import Register from './auth/Register';
 import Home from './pages/home';
 
+//Mantenerse al tanto del estado de autenticacion de los usuarios, se logra utilizando variables de useState
+
+//Para acceder al backend se importan los metoos de firebase
 import { auth } from './fire';
+//Este metodo nos regresa el usuario y su estado
 import { onAuthStateChanged } from 'firebase/auth';
 
 function App() {
 	const [user, setUser] = React.useState(null);
+	//Variable que mantiene los estados de la autenticacion
 	const [authState, setAuthState] = React.useState(null);
 
+	// Cuando se corre la aplicacion de react, utilizando el use effect podremos ver cual es el estado del usuario
 	React.useEffect(() => {
 		const unSubscribeAuth = onAuthStateChanged(
 			auth,
@@ -27,11 +33,17 @@ function App() {
 		return unSubscribeAuth;
 	}, [user]);
 
-	if (authState === null) return <div className="">loading...</div>;
+	//Mensaje de cargando
+	if (authState === null)
+		return <div className="font-bold text-center text-5xl">loading...</div>;
+
 	if (authState === 'login')
 		return <Login setAuthState={setAuthState} setUser={setUser} />;
+
 	if (authState === 'register')
 		return <Register setAuthState={setAuthState} setUser={setUser} />;
+
+	//Si el usuario está logeado, lo manda al home
 	if (user)
 		return <Home user={user} setAuthState={setAuthState} setUser={setUser} />;
 }

@@ -1,6 +1,9 @@
 /* * {
 	background: #f0f3f5;
 } */
+body {
+	overflow-y: hidden;
+}
 
 .home {
 	overflow-y: hidden;
@@ -76,7 +79,7 @@
 	.containerxd {
 		width: 60%;
 		margin: auto;
-		margin-top: 50px;
+		/* margin-top: 50px; */
 	}
 	.homeContainer {
 		width: 100%;
