@@ -1,5 +1,4 @@
 import React from 'react';
-import './style_components/navEncabezado.css';
 import { signOut } from 'firebase/auth';
 import { auth } from '../fire';
 
@@ -14,44 +13,44 @@ function navEncabezado({ user, setAuthState, setUser }) {
 	};
 
 	return (
-		// <nav className="navbarxd  text-light">
-		// 	<div className="container-fluid">
-		// 		<h3 className="titulonav">Weather App</h3>
-		// 	</div>
-		// </nav>
-		<nav class="navbar navbar-expand-lg bg-light d-flex">
-			<div class="container-fluid d-flex">
-				<a class="navbar-brand p-2 flex-grow-1" href="#">
-					Weather App
+		<nav class="navbar bg-dark fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand fs-3 text text-light" href="#">
+					Weather app
 				</a>
 				<button
 					class="navbar-toggler"
 					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarTogglerDemo02"
-					aria-controls="navbarTogglerDemo02"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span class="w-auto fs-1 text">
+						<i class="bi bi-list w-auto fs-1 text text-light"></i>
+					</span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-					<form class="d-flex" role="search">
-						{/* <button
-							onClick={signOutHandler}
-							type="subbmin"
-							class="btn btn-outline-success"
-						>
-							Cerrar sesion
-						</button> */}
+				<div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+							Config
+						</h5>
 						<button
-							onClick={signOutHandler}
-							class="btn btn-outline-success p-2"
-							type="submit"
-						>
-							Cerrar sesión <i class="bi bi-box-arrow-right"></i>
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<button onClick={signOutHandler} type="button" class="btn ">
+							Cerrar sesión
 						</button>
-					</form>
+					</div>
 				</div>
 			</div>
 		</nav>

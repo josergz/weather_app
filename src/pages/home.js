@@ -3,7 +3,7 @@ import Form from '../components/weather/Form';
 import './style/home.css';
 import { signOut } from 'firebase/auth';
 import { auth } from '../fire';
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 import Nav from '../components/navEncabezado';
 
 function home({ user, setAuthState, setUser }) {
@@ -21,18 +21,9 @@ function home({ user, setAuthState, setUser }) {
 			<Nav />
 			<div className="containerxd">
 				<div className="homeContainer">
-					{/* <h3 className="">Bienvenido {user}</h3> */}
-					{/* <Card /> */}
-
 					<div class="card mb-3 cardHome">
 						<div class="row g-0">
 							<div class="col-md-4">
-								{/* <img
-								style={{ height: '100%' }}
-								src="https://source.unsplash.com/category/nature"
-								class="img-fluid rounded-start"
-								alt="imagen"
-							/> */}
 								<img
 									src="https://i.pinimg.com/550x/e7/52/3f/e7523fa41a5bf574adc155807e8b5d00.jpg"
 									class="img-fluid rounded-start imgHome"
@@ -50,7 +41,7 @@ function home({ user, setAuthState, setUser }) {
 
 									<Form />
 									{/* Boton para cerrar sesion  */}
-									<div className="">
+									{/* <div className="">
 										<button
 											onClick={signOutHandler}
 											type="button"
@@ -58,7 +49,7 @@ function home({ user, setAuthState, setUser }) {
 										>
 											Cerrar sesion
 										</button>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>
