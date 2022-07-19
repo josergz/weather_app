@@ -37,7 +37,7 @@ function navEncabezado({ user, setAuthState, setUser }) {
 				>
 					<div class="offcanvas-header">
 						<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-							Config
+							Menú
 						</h5>
 						<button
 							type="button"
