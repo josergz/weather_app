@@ -1,0 +1,140 @@
+.containerCard,
+.containerForm {
+	width: 100%;
+}
+body {
+	background: #e0e0e0;
+}
+.containerCardHijo {
+	padding: 25px;
+	width: 80%;
+	margin: auto;
+}
+.cardHome {
+	border-radius: 30px;
+	background: #e0e0e0;
+	box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.formContainer {
+	width: 80%;
+	padding: 25px;
+}
+.headContainer {
+	width: 100%;
+	padding: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.temp {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgTemp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.imgTemp,
+.img {
+	width: 8rem;
+}
+
+.temp,
+.card-temp {
+	font-size: 2rem;
+}
+
+.temp,
+.card-title {
+	font-size: 2rem;
+}
+.headContainerdown {
+	margin: auto;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.headContainerdown,
+.card-text {
+	font-size: 0.9rem;
+}
+
+.proxhContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.proximasHoras {
+	width: 72%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pronosticoTitulo {
+	padding: 20px;
+	padding-top: 50px;
+}
+
+img {
+	width: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+	.containerCardHijo {
+		padding: 25px;
+		width: 90%;
+		margin: auto;
+	}
+	.cardHome {
+		border-radius: 10px;
+		background: #e0e0e0;
+		box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
+	.temp,
+	.card-temp {
+		font-size: 1.5rem;
+	}
+
+	.temp,
+	.card-title {
+		font-size: 1.5rem;
+	}
+	.proxhContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.pronosticoTitulo {
+		width: 100%;
+		text-align: center;
+		font-size: 0.8rem;
+	}
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from '../fire';
 
-function navEncabezado({ user, setAuthState, setUser }) {
+function Navbar({ user, setAuthState, setUser }) {
 	const signOutHandler = () => {
 		signOut(auth)
 			.then(() => {
@@ -15,7 +15,7 @@ function navEncabezado({ user, setAuthState, setUser }) {
 	return (
 		<nav class="navbar bg-dark fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand fs-3 text text-light" href="#">
+				<a class="navbar-brand fs-3 text text-light" href="/">
 					Weather app
 				</a>
 				<button
@@ -47,9 +47,28 @@ function navEncabezado({ user, setAuthState, setUser }) {
 						></button>
 					</div>
 					<div class="offcanvas-body">
-						<button onClick={signOutHandler} type="button" class="btn ">
-							Cerrar sesión
-						</button>
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+							<li class="nav-item ">
+								<a class="nav-link text-dark" href="../pages/about.js">
+									About
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-dark" href="/">
+									Contacto
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									onClick={signOutHandler}
+									class="nav-link text-dark "
+									href="/"
+								>
+									Cerrar sesión
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -57,4 +76,4 @@ function navEncabezado({ user, setAuthState, setUser }) {
 	);
 }
 
-export default navEncabezado;
+export default Navbar;

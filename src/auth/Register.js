@@ -3,7 +3,7 @@ import * as React from 'react';
 import { auth } from '../fire';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
-import '../auth/style/register.css';
+import '../assets/css/register.css';
 
 export default function Register({ setAuthState, setUser }) {
 	const [email, setEmail] = React.useState('');

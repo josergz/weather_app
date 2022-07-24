@@ -2,6 +2,7 @@ import * as React from 'react';
 import Login from './auth/Login';
 import Register from './auth/Register';
 import Home from './pages/home';
+import Cargando from './components/loading';
 
 //Mantenerse al tanto del estado de autenticacion de los usuarios, se logra utilizando variables de useState
 
@@ -35,7 +36,11 @@ function App() {
 
 	//Mensaje de cargando
 	if (authState === null)
-		return <div className="font-bold text-center text-5xl">loading...</div>;
+		return (
+			<div className="font-bold text-center text-5xl">
+				<Cargando />
+			</div>
+		);
 
 	if (authState === 'login')
 		return <Login setAuthState={setAuthState} setUser={setUser} />;

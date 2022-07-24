@@ -3,7 +3,7 @@ import * as React from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../fire';
 
-import './style/login.css';
+import '../assets/css/login.css';
 function Login({ setAuthState, setUser }) {
 	const [email, setEmail] = React.useState('');
 	const [password, setPassword] = React.useState('');
