@@ -1,6 +1,9 @@
 import React from 'react';
+
 import { signOut } from 'firebase/auth';
 import { auth } from '../fire';
+
+//import '../pages/contacto.css';
 
 function Navbar({ user, setAuthState, setUser }) {
 	const signOutHandler = () => {
@@ -53,11 +56,10 @@ function Navbar({ user, setAuthState, setUser }) {
 									About
 								</a>
 							</li>
-
-							<li class="nav-item">
-								<a class="nav-link text-dark" href="/">
-									Contacto
-								</a>
+							<li>
+								
+							<button className="registe"
+							type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contacto</button>
 							</li>
 							<li class="nav-item">
 								<a
@@ -67,10 +69,14 @@ function Navbar({ user, setAuthState, setUser }) {
 								>
 									Cerrar sesión
 								</a>
+							
 							</li>
 						</ul>
+
+						
 					</div>
 				</div>
+				
 			</div>
 		</nav>
 	);

@@ -1,10 +1,13 @@
 import React from 'react';
 // import Form from '../components/Form';
+
 import '../assets/css/home.css';
 import { signOut } from 'firebase/auth';
 import { auth } from '../fire';
 import Nav from '../components/Navbar';
 import WeatherInfo from '../components/WeatherInfo';
+import Contacto from '../pages/Contacto';
+import About from '../pages/about';
 
 function home({ user, setAuthState, setUser }) {
 	const signOutHandler = () => {
@@ -18,9 +21,13 @@ function home({ user, setAuthState, setUser }) {
 
 	return (
 		<div className="containerhome">
+			<About/>
 			<Nav />
 			<WeatherInfo />
+			<Contacto/>
+			
 		</div>
+		
 	);
 }
 
