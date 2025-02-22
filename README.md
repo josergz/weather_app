@@ -5,6 +5,7 @@
 Welcome to the **Weather App**, a modern and responsive web application designed to provide real-time weather information using the **Weather API** and **Firebase** as the backend database. This project is built with **React** and leverages the power of **JavaScript** to deliver a seamless user experience.
 
 ---
+
 ## Features ✨
 
 - **Real-Time Weather Data**: Fetch and display current weather conditions for any location.
@@ -17,7 +18,7 @@ Welcome to the **Weather App**, a modern and responsive web application designed
 
 ## Live Demo 🚀
 
-Check out the live version of the app here:  
+Check out the live version of the app here:
 [Weather App Live Site](https://weather-app-josergz.vercel.app)
 
 ---
@@ -48,15 +49,9 @@ Check out the live version of the app here:
 
 ## Authors 👨‍💻
 
-- **José de Jesús Rodríguez Angel** - [@josergz](https://github.com/josergz)  
-- **Edgardo Alfonso Cruz Hidalgo** - [@Alf0ns018](https://github.com/Alf0ns018)  
-- **Lanser Manuel Diaz Mojarra** - [@LanserDiaz123](https://github.com/LanserDiaz123)  
-
----
-
-## License 📄
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+- **José de Jesús Rodríguez Angel** - [@josergz](https://github.com/josergz)
+- **Edgardo Alfonso Cruz Hidalgo** - [@Alf0ns018](https://github.com/Alf0ns018)
+- **Lanser Manuel Diaz Mojarra** - [@LanserDiaz123](https://github.com/LanserDiaz123)
 
 ---
 
