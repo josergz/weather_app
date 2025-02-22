@@ -55,13 +55,6 @@ Check out the live version of the app here:
 
 ---
 
-## Acknowledgments 🙏
-
-- Thanks to [Weather API](https://www.weatherapi.com/) for providing the weather data.
-- Special thanks to the React and Firebase communities for their amazing tools and resources.
-
----
-
 ## Feedback and Contributions 🤝
 
 If you have any feedback, suggestions, or would like to contribute to this project, feel free to open an issue or submit a pull request. We appreciate your support! 😊
