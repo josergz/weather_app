@@ -49,11 +49,12 @@ Check out the live version of the app here:
 
 ## Authors 👨‍💻
 
-- **José de Jesús Rodríguez Angel** - [@josergz](https://github.com/josergz)
+- **José de Jesús Rodríguez Ángel** - [@josergz](https://github.com/josergz)
+-
 - **Edgardo Alfonso Cruz Hidalgo** - [@Alf0ns018](https://github.com/Alf0ns018)
+-
 - **Lanser Manuel Diaz Mojarra** - [@LanserDiaz123](https://github.com/LanserDiaz123)
-
----
+- ***
 
 ## Feedback and Contributions 🤝
 
