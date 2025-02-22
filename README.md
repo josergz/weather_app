@@ -5,7 +5,6 @@
 Welcome to the **Weather App**, a modern and responsive web application designed to provide real-time weather information using the **Weather API** and **Firebase** as the backend database. This project is built with **React** and leverages the power of **JavaScript** to deliver a seamless user experience.
 
 ---
-
 ## Features ✨
 
 - **Real-Time Weather Data**: Fetch and display current weather conditions for any location.
