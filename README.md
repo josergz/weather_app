@@ -19,8 +19,9 @@ Welcome to the **Weather App**, a modern and responsive web application designed
 ## Live Demo 🚀
 
 Check out the live version of the app here:
-[Weather App Live Site](https://weather-app-josergz.vercel.app)
 
+[Weather App Live Site](https://weather-app-josergz.vercel.app)
+</br>
 ---
 
 ## Built With 🛠️
