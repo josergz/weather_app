@@ -15,6 +15,8 @@ Welcome to the **Weather App**, a modern and responsive web application designed
 - **Dynamic Backgrounds**: Background changes based on the current weather conditions (e.g., sunny, rainy, snowy).
 
 ---
+## Preview
+![image](https://github.com/user-attachments/assets/1fb6dc0f-b2d2-4993-919a-d906c66f4f5d)
 
 ## Live Demo 🚀
 
